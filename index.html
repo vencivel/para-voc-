@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você, Meu Amor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset de margens e paddings para garantir consistência */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fundo com gradiente roxo e corações flutuando */
+        body {
+            background: linear-gradient(to bottom, #9b4dca, #6a2c8f); /* Gradiente roxo */
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Adicionando corações flutuantes no fundo */
+        .heart-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/heart.png'); /* Padrão de corações */
+            background-size: 50px 50px;
+            opacity: 0.1;
+            pointer-events: none;
+            animation: moveHearts 10s infinite linear;
+        }
+
+        /* Animação para mover os corações flutuantes */
+        @keyframes moveHearts {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 1000px 1000px;
+            }
+        }
+
+        /* Contêiner centralizado para o conteúdo */
+        .container {
+            width: 80%;
+            max-width: 750px;
+            line-height: 1.8;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1; /* Garante que o conteúdo ficará sobre o fundo */
+        }
+
+        /* Estilo para o título (fonte mais estilizada e encantadora) */
+        h1 {
+            font-family: 'Dancing Script', cursive; /* Fonte mais delicada */
+            font-size: 3rem;
+            color: #333; /* Cor preta suave */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            letter-spacing: 1px;
+        }
+
+        /* Parágrafos com efeito de fade-in e delays mais rápidos */
+        p {
+            font-family: 'Poppins', sans-serif; /* Fonte Poppins para os parágrafos */
+            font-size: 1.4rem;
+            color: #333; /* Cor preta suave */
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;  /* Duração de 1 segundo para a animação */
+            margin: 20px 0;
+            white-space: pre-wrap;
+        }
+
+        /* Animação de fadeIn com movimento suave */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Reduzindo os delays entre os parágrafos */
+        p:nth-child(1) { animation-delay: 0.5s; }
+        p:nth-child(2) { animation-delay: 1s; }
+        p:nth-child(3) { animation-delay: 1.5s; }
+        p:nth-child(4) { animation-delay: 2s; }
+        p:nth-child(5) { animation-delay: 2.5s; }
+
+        /* Efeito de coração ao passar o mouse */
+        .heart {
+            font-size: 1.2rem;
+            color: #ff60a3;
+            transition: transform 0.3s;
+        }
+
+        .heart:hover {
+            transform: scale(1.2);
+        }
+
+        /* Pequeno ícone de coração no final */
+        .heart-icon {
+            font-size: 2rem;
+            color: #ff60a3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Fundo de corações flutuantes -->
+    <div class="heart-background"></div>
+
+    <div class="container">
+        <h1>Para Você, Meu Amor</h1>
+        <p>Meu amor, ❤️</p>
+        <p>Desde o momento que você entrou na minha vida, tudo mudou de forma tão maravilhosa. Não há palavras suficientes para expressar o quanto você é importante para mim. Eu sou grato por cada risada, cada abraço, e por cada momento em que estamos juntos.</p>
+        <p>Você é o meu sonho que se tornou realidade. Com você, cada segundo é especial, cada olhar é profundo, e cada sorriso é o que me faz seguir em frente. Eu simplesmente não consigo imaginar a minha vida sem você ao meu lado.</p>
+        <p>Eu amo tudo em você. O seu jeito único de ser, sua risada gostosa, seu olhar carinhoso… tudo. Amo cada parte do seu ser e sou eternamente grato por compartilhar a vida ao seu lado.</p>
+        <p>Você é o sol nos meus dias nublados, a paz nos meus momentos de turbulência. Juntos, somos mais fortes, mais felizes, mais completos.</p>
+        <p>E por tudo isso, vou te amar sempre, sem pressa, sem fim. Porque você não é apenas uma parte da minha vida, você é tudo. ❤️</p>
+        <div class="heart-icon">❤️</div>
+    </div>
+
+</body>
+</html>
